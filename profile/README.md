@@ -10,6 +10,9 @@ Two faces (LAN via local-CA TLS, public via a gated tunnel profile that's off by
 **[kairos-llm-scorer](https://github.com/puyolabs/kairos-llm-scorer)** — LLM job-fit scoring service extracted from Kairos.
 Structured output (forced tool-use), an eval harness (97.1% decision agreement vs a 65.7% deterministic baseline), and deploy IaC (Terraform ECR/Fargate/ALB + a Kubernetes manifest). Validated end-to-end against real AWS.
 
+**[argus](https://github.com/puyolabs/argus)** — Next.js (App Router) frontend for the screening loop: findings list → verdict detail → decision → enqueue re-score.
+Passwordless Google sign-in over a stateless encrypted-cookie session (no database — the backend stays the single source of truth), a BFF boundary that keeps the backend host and service tokens server-side, TanStack Query caching, light/dark theming, i18n, and design-first RFCs. Apache-2.0.
+
 ### Stack
 
 PHP/Symfony · TypeScript (Angular/React) · Python/FastAPI · PostgreSQL + pgvector · Anthropic SDK · Caddy · Docker · Terraform · AWS
